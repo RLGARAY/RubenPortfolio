@@ -14,12 +14,13 @@ import HomeIcon from '@mui/icons-material/Home';
 import LibraryBooksIcon from '@mui/icons-material/LibraryBooks';
 import GitHubIcon from '@mui/icons-material/GitHub';
 
+import PageConfig from './PageConfig';
+
 export default function NavBar(): JSX.Element {
-  const { toggleDarkMode, isDarkMode } = useTheme();
   const [value, setValue] = useState<number>(0);
 
   return (
-    <Paper sx={{ position: 'fixed', bottom: 0, left: 0, right: 0 }} elevation={3}>
+    <Paper sx={{ position: 'fixed', bottom: 0, left: 0, right: 0 }} elevation={4}>
       <BottomNavigation
         showLabels
         sx={{ justifyContent: 'space-around' }}
@@ -40,9 +41,8 @@ export default function NavBar(): JSX.Element {
         <Link to="/projects" style={{ textDecoration: 'none', color: 'inherit' }}>
           <BottomNavigationAction label="Personal Projects" icon={<GitHubIcon />} />
         </Link>
-        <IconButton onClick={toggleDarkMode} color="inherit">
-          {isDarkMode ? <LightModeIcon /> : <DarkModeIcon />}
-        </IconButton>
+
+        <PageConfig />
       </BottomNavigation>
     </Paper>
   );
