@@ -1,0 +1,54 @@
+{
+  "experience": {
+    "title": "Work Experience",
+    "content": [
+      {
+        "subtitle": "Work Experience 1",
+        "texts": ["Text of the first work experience..."]
+      },
+      {
+        "subtitle": "Work Experience 2",
+        "texts": ["Text of the second work experience..."]
+      }
+    ]
+  },
+  "studies": {
+    "title": "Education",
+    "content": [
+      {
+        "subtitle": "Study 1",
+        "texts": ["Text of the first study..."]
+      },
+      {
+        "subtitle": "Study 2",
+        "texts": ["Text of the second study..."]
+      }
+    ]
+  },
+  "jobs": {
+    "title": "Previous Jobs",
+    "content": [
+      {
+        "subtitle": "Previous Job 1",
+        "texts": ["Text 1", "Text 2"]
+      },
+      {
+        "subtitle": "Previous Job 2",
+        "texts": ["Text of the second previous job..."]
+      }
+    ]
+  },
+  "home": {
+    "title": "Welcome",
+    "content": [
+      {
+        "subtitle": "Welcome",
+        "texts": ["Welcome text..."]
+      },
+      {
+        "subtitle": "Homepage Description",
+        "texts": ["Description of the homepage..."]
+      }
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "experience": {
+    "title": "Experiencia Laboral",
+    "content": [
+      {
+        "subtitle": "Experiencia Laboral 1",
+        "texts": ["Texto de la primera experiencia laboral..."]
+      },
+      {
+        "subtitle": "Experiencia Laboral 2",
+        "texts": ["Texto de la segunda experiencia laboral..."]
+      }
+    ]
+  },
+  "studies": {
+    "title": "Estudios",
+    "content": [
+      {
+        "subtitle": "Estudio 1",
+        "texts": ["Texto del primer estudio..."]
+      },
+      {
+        "subtitle": "Estudio 2",
+        "texts": ["Texto del segundo estudio..."]
+      }
+    ]
+  },
+  "jobs": {
+    "title": "Trabajos Anteriores",
+    "content": [
+      {
+        "subtitle": "Trabajo Anterior 1",
+        "texts": ["Texto 1", "texto 2"]
+      },
+      {
+        "subtitle": "Trabajo Anterior 2",
+        "texts": ["Texto del segundo trabajo anterior..."]
+      }
+    ]
+  },
+  "home": {
+    "title": "Bienvenido",
+    "content": [
+      {
+        "subtitle": "Bienvenido",
+        "texts": ["Texto de bienvenida..."]
+      },
+      {
+        "subtitle": "Descripción de la Página de Inicio",
+        "texts": ["Descripción de la página de inicio..."]
+      }
+    ]
+  }
+}

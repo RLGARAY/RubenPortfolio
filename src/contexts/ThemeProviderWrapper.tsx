@@ -3,7 +3,9 @@ import { ThemeProvider, createTheme } from '@mui/material/styles';
 
 interface ThemeContextProps {
   toggleDarkMode: () => void;
+  toggleLanguage: () => void;
   isDarkMode: boolean;
+  language: string;
 }
 
 const ThemeContext = createContext<ThemeContextProps | undefined>(undefined);
@@ -22,6 +24,7 @@ interface ThemeProviderWrapperProps {
 
 export const ThemeProviderWrapper: React.FC<ThemeProviderWrapperProps> = ({ children }) => {
   const [darkMode, setDarkMode] = useState(true);
+  const [language, setLanguage] = useState<string>('es');
 
   const theme = createTheme({
     palette: {
@@ -33,8 +36,14 @@ export const ThemeProviderWrapper: React.FC<ThemeProviderWrapperProps> = ({ chil
     setDarkMode(!darkMode);
   };
 
+  const toggleLanguage = () => {
+    setLanguage((prevLanguage) => (prevLanguage === 'en' ? 'es' : 'en'));
+  };
+
   return (
-    <ThemeContext.Provider value={{ toggleDarkMode, isDarkMode: darkMode }}>
+    <ThemeContext.Provider
+      value={{ toggleDarkMode, isDarkMode: darkMode, toggleLanguage, language }}
+    >
       <ThemeProvider theme={theme}>{children}</ThemeProvider>
     </ThemeContext.Provider>
   );

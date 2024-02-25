@@ -9,15 +9,15 @@ import { ToggleDarkMode } from '../custom/ToggleDarkMode';
 import { ToggleLanguage } from '../custom/ToggleLanguage';
 
 export default function PageConfig() {
-  const { toggleDarkMode } = useTheme();
+  const { toggleDarkMode, toggleLanguage } = useTheme();
 
   return (
     <FormGroup>
       <Stack direction="row" alignItems="center">
         <Typography>ES</Typography>
         <ToggleLanguage
+          onClick={toggleLanguage}
           sx={{ m: 1 }}
-          defaultChecked
           icon={<TranslateIcon fontSize="small" />}
           checkedIcon={<TranslateIcon fontSize="small" />}
         />
