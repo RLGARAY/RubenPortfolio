@@ -7,14 +7,13 @@ import React, {
   Dispatch,
   SetStateAction,
 } from 'react';
-
-import { ref, getDownloadURL } from 'firebase/storage';
-import { app, storage } from '../config/fire';
 import { useTheme } from '../contexts/ThemeProviderWrapper';
 
+// Interfaces
 interface TextItem {
   subtitle: string;
   texts: string[];
+  tags: string[];
 }
 
 interface SectionData {
@@ -35,6 +34,7 @@ interface TextProviderProps {
   children: ReactNode;
 }
 
+// Context
 const TextContext = createContext<TextContextProps | undefined>(undefined);
 
 export const TextProvider: React.FC<TextProviderProps> = ({ children }) => {
@@ -42,19 +42,17 @@ export const TextProvider: React.FC<TextProviderProps> = ({ children }) => {
   const [textData, setTextData] = useState<TextData | null>(null);
 
   useEffect(() => {
-    const fetchDataFromFirebase = async () => {
+    const fetchDataLocally = async () => {
       try {
-        const storageRef = ref(storage, `${language}_textDB.json`);
-        const response = await getDownloadURL(storageRef);
-
-        const fetchedTextData = await fetch(response).then((res) => res.json());
-        setTextData(fetchedTextData);
+        // Importa directamente el archivo JSON local
+        const response = await import(`../../public/${language}_textDB.json`);
+        setTextData(response.default);
       } catch (error) {
-        console.error('Error fetching data from Firebase:', error);
+        console.error('Error fetching data locally:', error);
       }
     };
 
-    fetchDataFromFirebase();
+    fetchDataLocally();
   }, [language]);
 
   return <TextContext.Provider value={{ textData, setTextData }}>{children}</TextContext.Provider>;

@@ -3,38 +3,50 @@
     "title": "Work Experience",
     "content": [
       {
-        "subtitle": "Work Experience 1",
-        "texts": ["Text of the first work experience..."]
-      },
-      {
-        "subtitle": "Work Experience 2",
-        "texts": ["Text of the second work experience..."]
+        "subtitle": "Front-End Developer",
+        "texts": [
+          "During my time at Gilytics AG from November 2021 to January 2023, I worked as a Front-End Developer. My responsibilities focused on creating and maintaining an innovative web tool developed with React and Material-UI, with a precise focus on managing maps and data layers.",
+          "I was in charge of maintaining various features and functionalities, as well as designing and implementing new features to enhance the user experience. Additionally, I had a brief experience in mentoring internship students. Although it was a more modest contribution, I participated in providing an introduction and support to students in the work environment."
+        ],
+        "tags": ["JavaScript", "React", "Material-UI", "FlexBox"]
       }
     ]
   },
   "studies": {
-    "title": "Education",
+    "title": "Studies",
     "content": [
       {
         "subtitle": "Study 1",
-        "texts": ["Text of the first study..."]
+        "texts": ["TO DO"],
+        "tags": []
       },
       {
         "subtitle": "Study 2",
-        "texts": ["Text of the second study..."]
+        "texts": ["TO DO"],
+        "tags": []
       }
     ]
   },
-  "jobs": {
-    "title": "Previous Jobs",
+  "projects": {
+    "title": "My Projects",
     "content": [
       {
-        "subtitle": "Previous Job 1",
-        "texts": ["Text 1", "Text 2"]
+        "subtitle": "Twins / Recally",
+        "texts": [
+          "I participated in a 2D card game development project in Unity, collaborating with two team members. Our proposal focused on implementing various game modes, such as classic, by category, by card, a level challenge, and one for 2 players to diversify the user experience.",
+          "One of the technical highlights was the integration of a system that allowed users to customize the games. We implemented the ability to create and use custom card decks, which involved advanced data management and dynamic adaptation of game rules. This functionality not only added complexity to the project but also offered users a level of technical customization beyond the norm in 2D card games."
+        ],
+        "tags": ["Unity", "C#"]
       },
       {
-        "subtitle": "Previous Job 2",
-        "texts": ["Text of the second previous job..."]
+        "subtitle": "The Mind - Final Project",
+        "texts": [
+          "I developed an online version of the card game The Mind for two players, with a real-time gameplay approach without turns. I implemented the web application using React and Material-UI, and leveraged the power of Firebase for instant synchronization of the game and users.",
+          "In terms of game synchronization, real-time state management through Firebase was crucial. This ensured that each action or move made by one player was immediately transmitted to the other, providing a simultaneous and authentic gaming experience. This approach maintained consistency in the sequence of events, delivering a seamless gaming experience.",
+          "The user interface was designed with Flexbox for efficient layout, and to enhance the visual experience, I incorporated animations using the Framer Motion library. These additions provided a flexible and dynamic design, contributing to a more engaging gaming experience.",
+          "In the user domain, the implementation of Firebase Authentication ensured strong and secure authentication. Each user uniquely accessed their gaming session, with associated data and progress exclusive to them. This synchronization not only contributed to the smoothness of the game but also ensured a personalized and secure experience for each participant, consolidating the integrity of real-time gaming."
+        ],
+        "tags": ["JavaScript", "React", "Material-UI", "FlexBox", "Framer-Motion", "Firebase"]
       }
     ]
   },
@@ -43,11 +55,13 @@
     "content": [
       {
         "subtitle": "Welcome",
-        "texts": ["Welcome text..."]
+        "texts": ["TO DO"],
+        "tags": []
       },
       {
-        "subtitle": "Homepage Description",
-        "texts": ["Description of the homepage..."]
+        "subtitle": "Home Page Description",
+        "texts": ["TO DO"],
+        "tags": []
       }
     ]
   }

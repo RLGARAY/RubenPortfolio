@@ -3,12 +3,12 @@
     "title": "Experiencia Laboral",
     "content": [
       {
-        "subtitle": "Experiencia Laboral 1",
-        "texts": ["Texto de la primera experiencia laboral..."]
-      },
-      {
-        "subtitle": "Experiencia Laboral 2",
-        "texts": ["Texto de la segunda experiencia laboral..."]
+        "subtitle": "Desarrollador Front-End",
+        "texts": [
+          "Durante mi tiempo en Gilytics AG de noviembre de 2021 a enero de 2023, desempeñé el rol de Desarrollador Front-End. Mi labor se centró en la creación y mantenimiento de una herramienta web innovadora, desarrollada con React y Material-UI, con un enfoque preciso en la gestión de mapas y capas de datos.",
+          "Me encargué del mantenimiento de las diversas características y funcionalidades, así como del diseño e implementación de algunas nuevas funcionalidades para mejorar la experiencia del usuario. Además, tuve una breve experiencia en la formación de estudiantes en prácticas. Aunque fue una contribución más modesta, participé en proporcionar una introducción y apoyo a estudiantes en el entorno laboral."
+        ],
+        "tags": ["JavaScript", "React", "Material-UI", "FlexBox"]
       }
     ]
   },
@@ -17,24 +17,36 @@
     "content": [
       {
         "subtitle": "Estudio 1",
-        "texts": ["Texto del primer estudio..."]
+        "texts": ["TO DO"],
+        "tags": []
       },
       {
         "subtitle": "Estudio 2",
-        "texts": ["Texto del segundo estudio..."]
+        "texts": ["TO DO"],
+        "tags": []
       }
     ]
   },
-  "jobs": {
-    "title": "Trabajos Anteriores",
+  "projects": {
+    "title": "Mis Proyectos",
     "content": [
       {
-        "subtitle": "Trabajo Anterior 1",
-        "texts": ["Texto 1", "texto 2"]
+        "subtitle": "Twins / Recally",
+        "texts": [
+          "Participé en un proyecto de desarrollo de un juego de cartas 2D en Unity, colaborando con dos compañeros de equipo. Nuestra propuesta se basó en la implementación de distintos modos de juego, tales como el clásico, por categoría, por carta, un desafío por niveles y uno para 2 jugadores con el objetivo de diversificar la experiencia del usuario.",
+          "Uno de los aspectos técnicos destacados fue la integración de un sistema que permitía a los usuarios personalizar las partidas. Implementamos la capacidad de crear y utilizar mazos de cartas personalizados, lo cual implicó una gestión avanzada de datos y la adaptación dinámica de las reglas de juego. Esta funcionalidad no solo añadió complejidad al proyecto, sino que también ofreció a los usuarios un nivel de personalización técnica que va más allá de la norma en juegos de cartas 2D."
+        ],
+        "tags": ["Unity", "C#"]
       },
       {
-        "subtitle": "Trabajo Anterior 2",
-        "texts": ["Texto del segundo trabajo anterior..."]
+        "subtitle": "The Mind - TFG",
+        "texts": [
+          "Desarrollé una versión en línea del juego de cartas The Mind para dos jugadores, con un enfoque de juego en tiempo real sin turnos. Implementé la aplicación web utilizando React y Material-UI, y aproveché la potencia de Firebase para la sincronización instantánea de la partida y de los usuarios.",
+          "En términos de sincronización de la partida, la gestión de estado en tiempo real mediante Firebase fue fundamental. Esto garantizó que cada acción o movimiento realizado por un jugador se transmitiera de manera inmediata al otro, proporcionando una experiencia de juego simultánea y auténtica. Este enfoque permitió mantener la coherencia en la secuencia de eventos, brindando una experiencia de juego sin interrupciones.",
+          "La interfaz de usuario se diseñó con Flexbox para lograr una disposición eficiente, y para mejorar la experiencia visual, incorporé animaciones mediante la biblioteca Framer Motion. Estas adiciones proporcionaron un diseño flexible y dinámico, contribuyendo a una experiencia de juego más atractiva.",
+          "En el ámbito de los usuarios, la implementación de Firebase Authentication aseguró una autenticación sólida y segura. Cada usuario accedía de manera única a su sesión de juego, con datos y progresos asociados de forma exclusiva. Esta sincronización no solo contribuyó a la fluidez del juego, sino que también aseguró una experiencia personalizada y segura para cada participante, consolidando la integridad del juego en tiempo real."
+        ],
+        "tags": ["JavaScript", "React", "Material-UI", "FlexBox", "Framer-Motion", "Firebase"]
       }
     ]
   },
@@ -43,11 +55,13 @@
     "content": [
       {
         "subtitle": "Bienvenido",
-        "texts": ["Texto de bienvenida..."]
+        "texts": ["TO DO"],
+        "tags": []
       },
       {
         "subtitle": "Descripción de la Página de Inicio",
-        "texts": ["Descripción de la página de inicio..."]
+        "texts": ["TO DO"],
+        "tags": []
       }
     ]
   }
