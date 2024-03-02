@@ -4,12 +4,14 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
+import Chip from '@mui/material/Chip';
 
 import { useTextContext } from '../contexts/DataProvider';
 
 interface TextItem {
   subtitle: string;
   texts: string[];
+  tags: string[];
 }
 
 interface SectionData {
@@ -51,18 +53,27 @@ const Experience: React.FC = () => {
             md={9}
             lg={8}
             sx={{
-              marginRight: index % 2 === 0 ? 'auto' : '0',
-              marginLeft: index % 2 !== 0 ? 'auto' : '0',
+              marginRight: index % 2 === 0 ? 'auto' : '30px',
+              marginLeft: index % 2 !== 0 ? 'auto' : '30px',
             }}
           >
             <Paper elevation={3} sx={{ padding: 2 }}>
-              <Typography variant="h6" gutterBottom>
+              <Typography variant="h4" gutterBottom>
                 {item.subtitle}
               </Typography>
               {item.texts.map((text, textIndex) => (
-                <Typography key={textIndex} variant="body2" gutterBottom>
+                <Typography key={textIndex} variant="body1" gutterBottom>
                   {text}
                 </Typography>
+              ))}
+              {item.tags.map((tag, tagIndex) => (
+                <Chip
+                  color="primary"
+                  variant="outlined"
+                  key={tagIndex}
+                  label={tag}
+                  sx={{ marginRight: 5 }}
+                />
               ))}
             </Paper>
           </Grid>

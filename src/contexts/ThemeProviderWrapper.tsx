@@ -29,6 +29,16 @@ export const ThemeProviderWrapper: React.FC<ThemeProviderWrapperProps> = ({ chil
   const theme = createTheme({
     palette: {
       mode: darkMode ? 'dark' : 'light',
+      primary: {
+        main: '#3f51b5',
+      },
+      secondary: {
+        main: '#f50057',
+      },
+      background: {
+        default: darkMode ? '#1b1b37' : 'auto',
+        paper: darkMode ? '##16202f' : 'auto',
+      },
     },
   });
 

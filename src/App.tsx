@@ -16,7 +16,7 @@ function App() {
   return (
     <ThemeProviderWrapper>
       <TextProvider>
-        <Box sx={{ height: '100vh', bgcolor: 'background.paper' }}>
+        <Box sx={{ height: '100vh', bgcolor: 'background.default' }}>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/studies" element={<Studies />} />

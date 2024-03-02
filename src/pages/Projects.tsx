@@ -1,10 +1,35 @@
-import * as React from 'react';
+import React from 'react';
+
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
+import Chip from '@mui/material/Chip';
 
-export default function Projects() {
+import { useTextContext } from '../contexts/DataProvider';
+
+interface TextItem {
+  subtitle: string;
+  texts: string[];
+  tags: string[];
+}
+
+interface SectionData {
+  title: string;
+  content: TextItem[];
+}
+
+const Projects: React.FC = () => {
+  // Obtener el valor del contexto
+  const textData = useTextContext();
+
+  // Manejar la carga de datos si aún no están disponibles
+  if (!textData || !textData.projects) {
+    return <p>Cargando...</p>;
+  }
+
+  // Obtener datos específicos de la sección de experiencia
+  const projectsData: SectionData = textData.projects;
   return (
     <Box
       sx={{
@@ -15,41 +40,40 @@ export default function Projects() {
       }}
     >
       <Typography variant="h1" gutterBottom>
-        Projectos Personales
+        {projectsData.title}
       </Typography>
-      <Grid container spacing={4} sx={{ flexDirection: 'column', padding: 2 }}>
-        <Grid item xs={12} sm={11} md={9} lg={8} sx={{ marginRight: 'auto' }}>
-          <Paper elevation={3} sx={{ padding: 2 }}>
-            <Typography variant="h6" gutterBottom>
-              Experiencia Izquierda
-            </Typography>
-            <Typography variant="body2">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-              dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-              mollit anim id est laborum.
-            </Typography>
-          </Paper>
-        </Grid>
-
-        <Grid item xs={12} sm={11} md={9} lg={8} sx={{ marginLeft: 'auto' }}>
-          <Paper elevation={3} sx={{ padding: 2 }}>
-            <Typography variant="h6" gutterBottom>
-              Experiencia derecha
-            </Typography>
-            <Typography variant="body2">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-              dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-              mollit anim id est laborum.
-            </Typography>
-          </Paper>
-        </Grid>
+      <Grid container spacing={4} sx={{ flexDirection: 'column', padding: 3 }}>
+        {projectsData.content.map((item, index) => (
+          <Grid
+            key={index}
+            item
+            xs={12}
+            sm={11}
+            md={9}
+            lg={8}
+            sx={{
+              marginRight: index % 2 === 0 ? 'auto' : '30px',
+              marginLeft: index % 2 !== 0 ? 'auto' : '30px',
+            }}
+          >
+            <Paper elevation={3} sx={{ padding: 2 }}>
+              <Typography variant="h4" gutterBottom>
+                {item.subtitle}
+              </Typography>
+              {item.texts.map((text, textIndex) => (
+                <Typography key={textIndex} variant="body1" gutterBottom>
+                  {text}
+                </Typography>
+              ))}
+              {item.tags.map((tag, tagIndex) => (
+                <Chip color="primary" key={tagIndex} label={tag} sx={{ marginRight: 5 }} />
+              ))}
+            </Paper>
+          </Grid>
+        ))}
       </Grid>
     </Box>
   );
-}
+};
+
+export default Projects;
