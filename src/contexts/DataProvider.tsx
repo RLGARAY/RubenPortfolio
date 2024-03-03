@@ -14,6 +14,8 @@ interface TextItem {
   subtitle: string;
   texts: string[];
   tags: string[];
+  image: string;
+  links: string[];
 }
 
 interface SectionData {

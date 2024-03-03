@@ -69,10 +69,9 @@ const Experience: React.FC = () => {
               {item.tags.map((tag, tagIndex) => (
                 <Chip
                   color="primary"
-                  variant="outlined"
                   key={tagIndex}
                   label={tag}
-                  sx={{ marginRight: 5 }}
+                  sx={{ marginRight: 3, marginBottom: 1.5 }}
                 />
               ))}
             </Paper>

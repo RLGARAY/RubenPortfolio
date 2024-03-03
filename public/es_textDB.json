@@ -8,7 +8,7 @@
           "Durante mi tiempo en Gilytics AG de noviembre de 2021 a enero de 2023, desempeñé el rol de Desarrollador Front-End. Mi labor se centró en la creación y mantenimiento de una herramienta web innovadora, desarrollada con React y Material-UI, con un enfoque preciso en la gestión de mapas y capas de datos.",
           "Me encargué del mantenimiento de las diversas características y funcionalidades, así como del diseño e implementación de algunas nuevas funcionalidades para mejorar la experiencia del usuario. Además, tuve una breve experiencia en la formación de estudiantes en prácticas. Aunque fue una contribución más modesta, participé en proporcionar una introducción y apoyo a estudiantes en el entorno laboral."
         ],
-        "tags": ["JavaScript", "React", "Material-UI", "FlexBox"]
+        "tags": ["JavaScript", "React", "Material-UI", "FlexBox", "Front-End"]
       }
     ]
   },
@@ -36,7 +36,12 @@
           "Participé en un proyecto de desarrollo de un juego de cartas 2D en Unity, colaborando con dos compañeros de equipo. Nuestra propuesta se basó en la implementación de distintos modos de juego, tales como el clásico, por categoría, por carta, un desafío por niveles y uno para 2 jugadores con el objetivo de diversificar la experiencia del usuario.",
           "Uno de los aspectos técnicos destacados fue la integración de un sistema que permitía a los usuarios personalizar las partidas. Implementamos la capacidad de crear y utilizar mazos de cartas personalizados, lo cual implicó una gestión avanzada de datos y la adaptación dinámica de las reglas de juego. Esta funcionalidad no solo añadió complejidad al proyecto, sino que también ofreció a los usuarios un nivel de personalización técnica que va más allá de la norma en juegos de cartas 2D."
         ],
-        "tags": ["Unity", "C#"]
+        "tags": ["Unity", "C#", "FullStack"],
+        "image": "perdida vida.jpg",
+        "links": {
+          "github": "url_to_github_repository",
+          "demo": "url_to_demo"
+        }
       },
       {
         "subtitle": "The Mind - TFG",
@@ -46,7 +51,32 @@
           "La interfaz de usuario se diseñó con Flexbox para lograr una disposición eficiente, y para mejorar la experiencia visual, incorporé animaciones mediante la biblioteca Framer Motion. Estas adiciones proporcionaron un diseño flexible y dinámico, contribuyendo a una experiencia de juego más atractiva.",
           "En el ámbito de los usuarios, la implementación de Firebase Authentication aseguró una autenticación sólida y segura. Cada usuario accedía de manera única a su sesión de juego, con datos y progresos asociados de forma exclusiva. Esta sincronización no solo contribuyó a la fluidez del juego, sino que también aseguró una experiencia personalizada y segura para cada participante, consolidando la integridad del juego en tiempo real."
         ],
-        "tags": ["JavaScript", "React", "Material-UI", "FlexBox", "Framer-Motion", "Firebase"]
+        "tags": [
+          "JavaScript",
+          "React",
+          "Material-UI",
+          "FlexBox",
+          "Framer-Motion",
+          "Firebase",
+          "FullStack"
+        ],
+        "image": "perdida vida.jpg",
+        "links": {
+          "github": "url_to_github_repository",
+          "demo": "url_to_demo"
+        }
+      },
+      {
+        "subtitle": "Este Portfolio",
+        "texts": [
+          "Aunque mi portafolio es simple, aproveché la oportunidad para probar nuevas técnicas que no conocía. Comencé a utilizar TypeScript, implementé un cambio de idioma personalizado y ajusté el color de la página mediante temas propios. A pesar de su simplicidad, este proyecto se convirtió en un espacio valioso para explorar y aprender."
+        ],
+        "tags": ["TypeScript", "React", "Material-UI", "FlexBox", "Firebase", "FullStack"],
+        "image": "perdida vida.jpg",
+        "links": {
+          "github": "url_to_github_repository",
+          "demo": "url_to_demo"
+        }
       }
     ]
   },

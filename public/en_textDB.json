@@ -8,7 +8,7 @@
           "During my time at Gilytics AG from November 2021 to January 2023, I worked as a Front-End Developer. My responsibilities focused on creating and maintaining an innovative web tool developed with React and Material-UI, with a precise focus on managing maps and data layers.",
           "I was in charge of maintaining various features and functionalities, as well as designing and implementing new features to enhance the user experience. Additionally, I had a brief experience in mentoring internship students. Although it was a more modest contribution, I participated in providing an introduction and support to students in the work environment."
         ],
-        "tags": ["JavaScript", "React", "Material-UI", "FlexBox"]
+        "tags": ["JavaScript", "React", "Material-UI", "FlexBox", "Front-End"]
       }
     ]
   },
@@ -36,7 +36,12 @@
           "I participated in a 2D card game development project in Unity, collaborating with two team members. Our proposal focused on implementing various game modes, such as classic, by category, by card, a level challenge, and one for 2 players to diversify the user experience.",
           "One of the technical highlights was the integration of a system that allowed users to customize the games. We implemented the ability to create and use custom card decks, which involved advanced data management and dynamic adaptation of game rules. This functionality not only added complexity to the project but also offered users a level of technical customization beyond the norm in 2D card games."
         ],
-        "tags": ["Unity", "C#"]
+        "tags": ["Unity", "C#", "FullStack"],
+        "image": "perdida vida.jpg",
+        "links": {
+          "github": "url_to_github_repository",
+          "demo": "url_to_demo"
+        }
       },
       {
         "subtitle": "The Mind - Final Project",
@@ -46,7 +51,32 @@
           "The user interface was designed with Flexbox for efficient layout, and to enhance the visual experience, I incorporated animations using the Framer Motion library. These additions provided a flexible and dynamic design, contributing to a more engaging gaming experience.",
           "In the user domain, the implementation of Firebase Authentication ensured strong and secure authentication. Each user uniquely accessed their gaming session, with associated data and progress exclusive to them. This synchronization not only contributed to the smoothness of the game but also ensured a personalized and secure experience for each participant, consolidating the integrity of real-time gaming."
         ],
-        "tags": ["JavaScript", "React", "Material-UI", "FlexBox", "Framer-Motion", "Firebase"]
+        "tags": [
+          "JavaScript",
+          "React",
+          "Material-UI",
+          "FlexBox",
+          "Framer-Motion",
+          "Firebase",
+          "FullStack"
+        ],
+        "image": "perdida vida.jpg",
+        "links": {
+          "github": "url_to_github_repository",
+          "demo": "url_to_demo"
+        }
+      },
+      {
+        "subtitle": "This Portfolio",
+        "texts": [
+          "Even though my portfolio is simple, I took the opportunity to try out new techniques that I wasn't familiar with. I started using TypeScript, implemented a custom language switch, and adjusted the page's color through custom themes. Despite its simplicity, this project became a valuable space for exploration and learning."
+        ],
+        "tags": ["TypeScript", "React", "Material-UI", "FlexBox", "Firebase", "FullStack"],
+        "image": "perdida vida.jpg",
+        "links": {
+          "github": "url_to_github_repository",
+          "demo": "url_to_demo"
+        }
       }
     ]
   },

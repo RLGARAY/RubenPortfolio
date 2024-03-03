@@ -12,6 +12,8 @@ interface TextItem {
   subtitle: string;
   texts: string[];
   tags: string[];
+  image: string;
+  links: string[];
 }
 
 interface SectionData {
@@ -20,16 +22,14 @@ interface SectionData {
 }
 
 const Projects: React.FC = () => {
-  // Obtener el valor del contexto
   const textData = useTextContext();
 
-  // Manejar la carga de datos si aún no están disponibles
   if (!textData || !textData.projects) {
     return <p>Cargando...</p>;
   }
 
-  // Obtener datos específicos de la sección de experiencia
   const projectsData: SectionData = textData.projects;
+
   return (
     <Box
       sx={{
@@ -42,7 +42,7 @@ const Projects: React.FC = () => {
       <Typography variant="h1" gutterBottom>
         {projectsData.title}
       </Typography>
-      <Grid container spacing={4} sx={{ flexDirection: 'column', padding: 3 }}>
+      <Grid container spacing={4} sx={{ flexDirection: 'column', padding: 2 }}>
         {projectsData.content.map((item, index) => (
           <Grid
             key={index}
@@ -66,7 +66,12 @@ const Projects: React.FC = () => {
                 </Typography>
               ))}
               {item.tags.map((tag, tagIndex) => (
-                <Chip color="primary" key={tagIndex} label={tag} sx={{ marginRight: 5 }} />
+                <Chip
+                  color="primary"
+                  key={tagIndex}
+                  label={tag}
+                  sx={{ marginRight: 3, marginBottom: 1.5 }}
+                />
               ))}
             </Paper>
           </Grid>

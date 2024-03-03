@@ -1,5 +1,6 @@
 import React from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
+import CssBaseline from '@mui/material/CssBaseline';
 
 import Box from '@mui/material/Box';
 
@@ -16,16 +17,24 @@ function App() {
   return (
     <ThemeProviderWrapper>
       <TextProvider>
-        <Box sx={{ height: '100vh', bgcolor: 'background.default' }}>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/studies" element={<Studies />} />
-            <Route path="/experience" element={<Experience />} />
-            <Route path="/projects" element={<Projects />} />
-            {/* Ruta comodín: redirigir a Home si la ruta no coincide */}
-            <Route path="*" element={<Navigate to="/" />} />
-          </Routes>
+        <CssBaseline />
+        <Box sx={{ height: '94vh', display: 'flex', flexDirection: 'column' }}>
           <NavBar />
+          <Box
+            sx={{
+              flexGrow: 1,
+              overflow: 'auto',
+            }}
+          >
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/studies" element={<Studies />} />
+              <Route path="/experience" element={<Experience />} />
+              <Route path="/projects" element={<Projects />} />
+              {/* Ruta comodín: redirigir a Home si la ruta no coincide */}
+              <Route path="*" element={<Navigate to="/" />} />
+            </Routes>
+          </Box>
         </Box>
       </TextProvider>
     </ThemeProviderWrapper>
