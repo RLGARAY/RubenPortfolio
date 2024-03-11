@@ -16,13 +16,13 @@
     "title": "Estudios",
     "content": [
       {
-        "subtitle": "Estudio 1",
-        "texts": ["TO DO"],
+        "subtitle": "WIP",
+        "texts": ["WIP"],
         "tags": []
       },
       {
-        "subtitle": "Estudio 2",
-        "texts": ["TO DO"],
+        "subtitle": "WIP",
+        "texts": ["WIP"],
         "tags": []
       }
     ]
@@ -85,13 +85,11 @@
     "content": [
       {
         "subtitle": "Bienvenido",
-        "texts": ["TO DO"],
-        "tags": []
-      },
-      {
-        "subtitle": "Descripción de la Página de Inicio",
-        "texts": ["TO DO"],
-        "tags": []
+        "texts": [
+          "Hola, soy Rubén, ingeniero informático con un año de experiencia. Mi especialización se centra en el desarrollo de software, con un enfoque reciente en el mundo del desarrollo web, especialmente trabajando con React.",
+          "Este portafolio ofrece una visión rápida de mi trayectoria, proyectos destacados y la exploración continua de nuevas tecnologías que alimentan mi pasión por la innovación."
+        ],
+        "image": "me.jpg"
       }
     ]
   }

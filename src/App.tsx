@@ -18,7 +18,15 @@ function App() {
     <ThemeProviderWrapper>
       <TextProvider>
         <CssBaseline />
-        <Box sx={{ height: '94vh', display: 'flex', flexDirection: 'column' }}>
+        <Box
+          sx={{
+            height: '94vh',
+            display: 'flex',
+            flexDirection: 'column',
+            backgroundImage: 'url("Images/backgroundDark.jpg")',
+            backgroundSize: 'cover',
+          }}
+        >
           <NavBar />
           <Box
             sx={{

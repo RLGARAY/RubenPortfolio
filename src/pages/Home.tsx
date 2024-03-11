@@ -2,16 +2,13 @@ import React from 'react';
 
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import Paper from '@mui/material/Paper';
-import Grid from '@mui/material/Grid';
-import Chip from '@mui/material/Chip';
 
 import { useTextContext } from '../contexts/DataProvider';
 
 interface TextItem {
   subtitle: string;
   texts: string[];
-  tags: string[];
+  image: string;
 }
 
 interface SectionData {
@@ -30,6 +27,8 @@ const Home: React.FC = () => {
 
   // Obtener datos específicos de la sección de experiencia
   const homeData: SectionData = textData.home;
+  const imageSrc = homeData.content[0].image;
+
   return (
     <Box
       sx={{
@@ -37,47 +36,41 @@ const Home: React.FC = () => {
         flexDirection: 'column',
         alignItems: 'center',
         textAlign: 'center',
+        padding: '20px',
       }}
     >
       <Typography variant="h1" gutterBottom>
         {homeData.title}
       </Typography>
-      <Grid container spacing={4} sx={{ flexDirection: 'column', padding: 2 }}>
-        {homeData.content.map((item, index) => (
-          <Grid
-            key={index}
-            item
-            xs={12}
-            sm={11}
-            md={9}
-            lg={8}
-            sx={{
-              marginRight: index % 2 === 0 ? 'auto' : '30px',
-              marginLeft: index % 2 !== 0 ? 'auto' : '30px',
-            }}
-          >
-            <Paper elevation={3} sx={{ padding: 2 }}>
-              <Typography variant="h4" gutterBottom>
-                {item.subtitle}
-              </Typography>
-              {item.texts.map((text, textIndex) => (
-                <Typography key={textIndex} variant="body1" gutterBottom>
-                  {text}
-                </Typography>
-              ))}
-              {item.tags.map((tag, tagIndex) => (
-                <Chip
-                  color="primary"
-                  variant="outlined"
-                  key={tagIndex}
-                  label={tag}
-                  sx={{ marginRight: 5 }}
-                />
-              ))}
-            </Paper>
-          </Grid>
-        ))}
-      </Grid>
+
+      {imageSrc && (
+        <Box
+          style={{
+            display: 'flex',
+            flexDirection: 'row',
+            alignItems: 'center',
+            gap: '15px',
+          }}
+        >
+          <img
+            src={'Images/' + imageSrc}
+            alt="Imagen de bienvenida"
+            style={{ maxWidth: '100%', maxHeight: '300px', borderRadius: '8px' }}
+          />
+
+          <div style={{ maxWidth: '700px', width: '100%', textAlign: 'left' }}>
+            {homeData.content.map((item, index) => (
+              <div key={index}>
+                {item.texts.map((text, i) => (
+                  <Typography key={i} variant="h5" paragraph>
+                    {text}
+                  </Typography>
+                ))}
+              </div>
+            ))}
+          </div>
+        </Box>
+      )}
     </Box>
   );
 };

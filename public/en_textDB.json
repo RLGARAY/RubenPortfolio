@@ -16,13 +16,13 @@
     "title": "Studies",
     "content": [
       {
-        "subtitle": "Study 1",
-        "texts": ["TO DO"],
+        "subtitle": "WIP",
+        "texts": ["WIP"],
         "tags": []
       },
       {
-        "subtitle": "Study 2",
-        "texts": ["TO DO"],
+        "subtitle": "WIP",
+        "texts": ["WIP"],
         "tags": []
       }
     ]
@@ -85,13 +85,11 @@
     "content": [
       {
         "subtitle": "Welcome",
-        "texts": ["TO DO"],
-        "tags": []
-      },
-      {
-        "subtitle": "Home Page Description",
-        "texts": ["TO DO"],
-        "tags": []
+        "texts": [
+          "Hello, I'm Rubén, a computer engineer with one year of experience. My expertise lies in software development, with a recent focus on the world of web development, particularly working with React.",
+          "This portfolio provides a quick overview of my journey, notable projects, and the ongoing exploration of new technologies that fuel my passion for innovation."
+        ],
+        "image": "me.jpg"
       }
     ]
   }

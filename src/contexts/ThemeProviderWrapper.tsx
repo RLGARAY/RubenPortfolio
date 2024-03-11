@@ -37,7 +37,15 @@ export const ThemeProviderWrapper: React.FC<ThemeProviderWrapperProps> = ({ chil
       },
       background: {
         default: darkMode ? '#1b1b37' : 'auto',
-        paper: darkMode ? '#16202f' : 'auto',
+        paper: darkMode ? '#16202f' : '#fff',
+      },
+    },
+    typography: {
+      h1: {
+        color: '#fff',
+      },
+      h5: {
+        color: '#fff',
       },
     },
   });
