@@ -5,7 +5,10 @@ import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import Chip from '@mui/material/Chip';
+import Divider from '@mui/material/Divider';
+import Stack from '@mui/material/Stack';
 
+import ImageCard from '../components/ImageCard';
 import { useTextContext } from '../contexts/DataProvider';
 
 interface TextItem {
@@ -13,7 +16,10 @@ interface TextItem {
   texts: string[];
   tags: string[];
   image: string;
-  links: string[];
+  links: {
+    github: string;
+    demo: string;
+  };
 }
 
 interface SectionData {
@@ -60,19 +66,35 @@ const Projects: React.FC = () => {
               <Typography variant="h4" gutterBottom>
                 {item.subtitle}
               </Typography>
-              {item.texts.map((text, textIndex) => (
-                <Typography key={textIndex} variant="body1" gutterBottom>
-                  {text}
-                </Typography>
-              ))}
-              {item.tags.map((tag, tagIndex) => (
-                <Chip
-                  color="primary"
-                  key={tagIndex}
-                  label={tag}
-                  sx={{ marginRight: 3, marginBottom: 1.5 }}
-                />
-              ))}
+              <Box
+                sx={{
+                  display: 'flex',
+                  flexDirection: index % 2 !== 0 ? 'row-reverse' : 'row',
+                  gap: '10px',
+                }}
+              >
+                <Stack
+                  sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-evenly' }}
+                >
+                  {item.texts.map((text, textIndex) => (
+                    <Typography key={textIndex} variant="body1" paragraph>
+                      {text}
+                    </Typography>
+                  ))}
+                  <div>
+                    {item.tags.map((tag, tagIndex) => (
+                      <Chip
+                        color="primary"
+                        key={tagIndex}
+                        label={tag}
+                        sx={{ marginRight: 3, marginBottom: 1.5 }}
+                      />
+                    ))}
+                  </div>
+                </Stack>
+                <Divider orientation="vertical" flexItem />
+                <ImageCard image={item.image} links={item.links} />
+              </Box>
             </Paper>
           </Grid>
         ))}

@@ -15,7 +15,10 @@ interface TextItem {
   texts: string[];
   tags: string[];
   image: string;
-  links: string[];
+  links: {
+    github: string;
+    demo: string;
+  };
 }
 
 interface SectionData {

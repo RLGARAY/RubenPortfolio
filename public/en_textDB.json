@@ -8,7 +8,7 @@
           "During my time at Gilytics AG from November 2021 to January 2023, I worked as a Front-End Developer. My responsibilities focused on creating and maintaining an innovative web tool developed with React and Material-UI, with a precise focus on managing maps and data layers.",
           "I was in charge of maintaining various features and functionalities, as well as designing and implementing new features to enhance the user experience. Additionally, I had a brief experience in mentoring internship students. Although it was a more modest contribution, I participated in providing an introduction and support to students in the work environment."
         ],
-        "tags": ["JavaScript", "React", "Material-UI", "FlexBox", "Front-End"]
+        "tags": ["JavaScript", "HTML", "React", "Material-UI", "FlexBox", "Front-End"]
       }
     ]
   },
@@ -37,10 +37,10 @@
           "One of the technical highlights was the integration of a system that allowed users to customize the games. We implemented the ability to create and use custom card decks, which involved advanced data management and dynamic adaptation of game rules. This functionality not only added complexity to the project but also offered users a level of technical customization beyond the norm in 2D card games."
         ],
         "tags": ["Unity", "C#", "FullStack"],
-        "image": "perdida vida.jpg",
+        "image": "rememory.jpg",
         "links": {
-          "github": "url_to_github_repository",
-          "demo": "url_to_demo"
+          "github": "https://github.com/UxxeR/TWINS",
+          "demo": "https://play.google.com/store/apps/details?id=com.CoolGames.Memento&hl=es_419&gl=US"
         }
       },
       {
@@ -53,6 +53,7 @@
         ],
         "tags": [
           "JavaScript",
+          "HTML",
           "React",
           "Material-UI",
           "FlexBox",
@@ -60,10 +61,10 @@
           "Firebase",
           "FullStack"
         ],
-        "image": "perdida vida.jpg",
+        "image": "mindCapture.jpg",
         "links": {
-          "github": "url_to_github_repository",
-          "demo": "url_to_demo"
+          "github": "https://github.com/RLGARAY/juego-mind",
+          "demo": "https://mind-game-rlg.web.app/"
         }
       },
       {
@@ -71,11 +72,11 @@
         "texts": [
           "Even though my portfolio is simple, I took the opportunity to try out new techniques that I wasn't familiar with. I started using TypeScript, implemented a custom language switch, and adjusted the page's color through custom themes. Despite its simplicity, this project became a valuable space for exploration and learning."
         ],
-        "tags": ["TypeScript", "React", "Material-UI", "FlexBox", "Firebase", "FullStack"],
-        "image": "perdida vida.jpg",
+        "tags": ["TypeScript", "HTML", "React", "Material-UI", "FlexBox", "Firebase", "FullStack"],
+        "image": "",
         "links": {
-          "github": "url_to_github_repository",
-          "demo": "url_to_demo"
+          "github": "https://github.com/RLGARAY/RubenPortfolio",
+          "demo": ""
         }
       }
     ]
