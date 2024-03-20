@@ -2,6 +2,8 @@ import React from 'react';
 
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
+import CloudDownloadIcon from '@mui/icons-material/CloudDownload';
 
 import { useTextContext } from '../contexts/DataProvider';
 
@@ -17,15 +19,12 @@ interface SectionData {
 }
 
 const Home: React.FC = () => {
-  // Obtener el valor del contexto
   const textData = useTextContext();
 
-  // Manejar la carga de datos si aún no están disponibles
   if (!textData || !textData.home) {
     return <p>Cargando...</p>;
   }
 
-  // Obtener datos específicos de la sección de experiencia
   const homeData: SectionData = textData.home;
   const imageSrc = homeData.content[0].image;
 
@@ -59,18 +58,24 @@ const Home: React.FC = () => {
           />
 
           <div style={{ maxWidth: '700px', width: '100%', textAlign: 'left' }}>
-            {homeData.content.map((item, index) => (
-              <div key={index}>
-                {item.texts.map((text, i) => (
-                  <Typography key={i} variant="h5" paragraph>
-                    {text}
-                  </Typography>
-                ))}
-              </div>
+            {homeData.content[0].texts.map((text, i) => (
+              <Typography key={i} variant="h5" paragraph>
+                {text}
+              </Typography>
             ))}
           </div>
         </Box>
       )}
+      <Button
+        variant="contained"
+        color="primary"
+        size="large"
+        href={`${process.env.PUBLIC_URL}/${'Ruben CV.pdf'}`}
+        download={'Ruben CV.pdf'}
+        startIcon={<CloudDownloadIcon />}
+      >
+        Descargar CV
+      </Button>
     </Box>
   );
 };

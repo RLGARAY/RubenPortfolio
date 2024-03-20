@@ -31,9 +31,9 @@ export default function NavBar(): JSX.Element {
         <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>
           <BottomNavigationAction label="Home" icon={<HomeIcon />} />
         </Link>
-        <Link to="/studies" style={{ textDecoration: 'none', color: 'inherit' }}>
+        {/*<Link to="/studies" style={{ textDecoration: 'none', color: 'inherit' }}>
           <BottomNavigationAction label="Studies" icon={<LibraryBooksIcon />} />
-        </Link>
+      </Link>*/}
         <Link to="/experience" style={{ textDecoration: 'none', color: 'inherit' }}>
           <BottomNavigationAction label="Experience" icon={<HomeRepairServiceIcon />} />
         </Link>

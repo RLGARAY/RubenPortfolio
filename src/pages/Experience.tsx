@@ -20,15 +20,12 @@ interface SectionData {
 }
 
 const Experience: React.FC = () => {
-  // Obtener el valor del contexto
   const textData = useTextContext();
 
-  // Manejar la carga de datos si aún no están disponibles
   if (!textData || !textData.experience) {
     return <p>Cargando...</p>;
   }
 
-  // Obtener datos específicos de la sección de experiencia
   const experienceData: SectionData = textData.experience;
 
   return (
