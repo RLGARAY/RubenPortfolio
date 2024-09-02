@@ -88,7 +88,8 @@
         "subtitle": "Welcome",
         "texts": [
           "Hello, I'm Rubén, a computer engineer with one year of experience. My expertise lies in software development, with a recent focus on the world of web development, particularly working with React.",
-          "This portfolio provides a quick overview of my journey, notable projects, and the ongoing exploration of new technologies that fuel my passion for innovation."
+          "This portfolio provides a more detailed overview of my journey, notable projects, and the ongoing exploration of new technologies that fuel my passion for innovation.",
+          "I invite you to browse my website."
         ],
         "image": "me.jpg"
       }

@@ -70,8 +70,8 @@ const Home: React.FC = () => {
         variant="contained"
         color="primary"
         size="large"
-        href={`${process.env.PUBLIC_URL}/${'Ruben CV.pdf'}`}
-        download={'Ruben CV.pdf'}
+        href={`${process.env.PUBLIC_URL}/${'Ruben Linuesa CV .pdf'}`}
+        download={'Ruben Linuesa CV .pdf'}
         startIcon={<CloudDownloadIcon />}
       >
         Descargar CV
